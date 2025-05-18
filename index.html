@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lotto Money App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0c0c0c;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 0;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      line-height: 1.3;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ff2e2e;
+      color: #fff;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-top: 20px;
+      position: relative;
+      animation: pulse 1.8s infinite;
+      box-shadow: 0 0 0 rgba(255, 46, 46, 0.7);
+      transition: box-shadow 0.3s;
+    }
+
+    .btn:hover {
+      background: #e62222;
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(255, 46, 46, 0.6);
+      }
+      70% {
+        box-shadow: 0 0 0 20px rgba(255, 46, 46, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(255, 46, 46, 0);
+      }
+    }
+
+    .emoji-icon {
+      display: block;
+      margin: 20px auto 30px;
+      text-align: center;
+    }
+
+    .emoji-icon img {
+      width: 320px;
+      height: 320px;
+      transition: transform 0.3s ease;
+    }
+
+    .emoji-icon img:hover {
+      transform: scale(1.05);
+    }
+
+    .flex-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .box {
+      background: #1a1a1a;
+      border-radius: 10px;
+      padding: 20px;
+      flex: 1 1 45%;
+      min-width: 280px;
+      transition: transform 0.3s;
+    }
+
+    .box:hover {
+      transform: translateY(-4px);
+    }
+
+    .highlight {
+      color: #ff2e2e;
+      font-weight: bold;
+    }
+
+    .step-block {
+      margin-bottom: 30px;
+    }
+
+    .step-title {
+      color: #ff2e2e;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .step-desc {
+      color: #ddd;
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #444;
+      margin: 0 auto 25px auto;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+        text-align: left;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        text-align: left;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+      }
+
+      p {
+        font-size: 1rem;
+        text-align: left;
+      }
+
+      .btn {
+        width: auto;
+        padding: 12px 20px;
+        font-size: 0.95rem;
+        margin-top: 16px;
+      }
+
+      .container {
+        padding: 20px 0;
+      }
+
+      .flex-row {
+        flex-direction: column;
+      }
+
+      .box {
+        flex: 1 1 100%;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .emoji-icon img {
+        width: 280px !important;
+        height: 280px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="container">
+    <div style="text-align: center; margin-top: -10px; margin-bottom: 8px;">
+      <img 
+        src="https://i.imgur.com/Oz99zYk.png" 
+        alt="Logo LottoWins"
+        style="width: 160px; height: auto;">
+    </div>
+    <h1>Increase Your Chances of Winning the US Lottery with Just a Few Taps on Your Phone!</h1>
+    <p>Discover the #1 App that brings together the top American lotteries, proven strategies, and customized statistics to boost your odds of winning.</p>
+    <a href="#" class="btn">BUY NOW</a>
+  ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+  <p class="center">Join the winning community today!</p>
+    <div class="center">
+      <img src="https://i.imgur.com/j3wMHI5.png" alt="App Preview" style="max-width: 100%; height: auto; border-radius: 20px; margin-top: 20px;">
+    </div>
+  </header>
+
+  <!-- WHAT IS OUR APP -->
+  <section class="container">
+    <h2>What Is Our App?</h2>
+    <p>Our app is designed to help casual players, luck enthusiasts, and curious individuals connect with the biggest lotteries in the United States, such as Powerball, Mega Millions, and many more.</p>
+    <p>Through statistical analysis, draw history, and up-to-date tips, you'll have the opportunity to create smarter combinations, optimize your guesses, and increase your chances of winning incredible prizes.</p>
+    <a href="#" class="btn">BUY NOW</a>
+    <div class="center" style="margin-top: 24px;">
+      <img 
+        src="https://i.imgur.com/27HJr7t.png" 
+        alt="How it Works"
+        style="max-width: 100%; height: auto; border-radius: 16px;">
+    </div>
+  </section>
+
+  <!-- DIFFERENTIAL -->
+  <section class="container center">
+    <h2>Why Is Our App Different?</h2>
+    <div class="flex-row">
+      <div class="box"><h3>📊 Powerful Statistical Analysis</h3><p>Gain access to historical data and recurring draw patterns.</p></div>
+      <div class="box"><h3>🇺🇸 Access to All US Lotteries</h3><p>From Powerball to state-specific lotteries, choose from the top available options.</p></div>
+      <div class="box"><h3>📈 Up-to-Date Tips & Strategies</h3><p>Receive expert and algorithm-driven guidance to enhance your picks.</p></div>
+      <div class="box"><h3>🔔 Alerts & Notifications Real Time</h3><p>Never miss a draw deadline or a winning ticket result.</p></div>
+      <div class="box"><h3>🧭 Simple & Intuitive Interface</h3><p>Even without experience, you can easily navigate and find what you need.</p></div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="container center">
+    <a href="#" class="btn">BUY NOW</a>
+
+<h2>How Does the App Increase Your Chances?</h2>
+
+    <div class="step-block">
+      <h3 class="step-title">Choose Your Lottery</h3>
+      <p class="step-desc">Select which American lottery you want to join, from dozens of available options.</p>
+      <hr>
+    </div>
+
+    <div class="step-block">
+      <h3 class="step-title">Get Strategic Information</h3>
+      <p class="step-desc">Access statistics, trends, and detailed analyses of past winning combinations.</p>
+      <hr>
+    </div>
+
+    <div class="step-block">
+      <h3 class="step-title">Create Smart Bets</h3>
+      <p class="step-desc">Build your predictions based on real data, not just luck.</p>
+      <hr>
+    </div>
+
+    <div class="step-block">
+      <h3 class="step-title">Track Results in Real-Time</h3>
+      <p class="step-desc">Receive notifications as soon as results are released, checking if you've hit a prize.</p>
+      <hr>
+    </div>
+  </section>
+
+  <!-- GUARANTEE -->
+  <section class="container">
+    <div class="emoji-icon">
+      <img src="https://i.imgur.com/wZ7n7Jx.png" alt="Ícone de check">
+    </div>
+    <h2>Our Satisfaction Guarantee</h2>
+    <p>We are so confident in the power of our app that we offer a 60-day satisfaction guarantee. If, after using our strategies and features, you don't feel you're making smarter choices, get in touch with us. Our team is ready to help, guide you, and ensure you get the most out of your experience.</p>
+    <a href="#" class="btn">BUY NOW</a>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="container center">
+    <div class="emoji-icon">
+      <img src="https://i.imgur.com/7lQJvUr.png" alt="Ícone de foguete" style="width: 220px; height: 220px;">
+    </div>
+    <h2>Ready to Increase Your Chances?</h2>
+    <p>Don't leave your luck to chance. Download now the app that combines advanced technology, statistics, and expert knowledge to turn your bets into real opportunities to win in the American lottery.</p>
+    <p><strong>Total Price: $197</strong></p>
+    <a href="#" class="btn">BUY NOW</a>
+  </section>
+
+</body>
+</html>
